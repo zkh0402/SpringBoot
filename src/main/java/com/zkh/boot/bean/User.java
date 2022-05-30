@@ -7,6 +7,15 @@ package com.zkh.boot.bean;
 public class User {
     private String name;
     private Integer age;
+    private Pet pet;
+
+    public Pet getPet() {
+        return pet;
+    }
+
+    public void setPet(Pet pet) {
+        this.pet = pet;
+    }
 
     public User() {
     }
@@ -37,6 +46,7 @@ public class User {
         return "User{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", pet=" + pet +
                 '}';
     }
 }
